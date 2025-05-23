@@ -66,6 +66,7 @@
         let userPaused = false;
         // Detect manual pause
         video.addEventListener('pause', function(e) {
+            // If the pause was triggered by user (not programmatically)
             if (!video.dataset.autoPaused && !video.dataset.outOfView) {
                 userPaused = true;
             }
@@ -101,13 +102,6 @@
             observer.observe(video);
             video.dataset.observing = '1';
         }
-        // Always set HQ and resume if needed when user clicks play
-        video.addEventListener('play', function() {
-            setHQ(video);
-            if (forceHQ && !userPaused && !video.dataset.outOfView && video.paused) {
-                video.play();
-            }
-        }, true);
     }
 
     // Observe for new videos
