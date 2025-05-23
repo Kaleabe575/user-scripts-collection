@@ -1,12 +1,15 @@
 // ==UserScript==
 // @name         Twitter/X Force HQ Video
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Always play Twitter/X videos in highest quality, prevent auto-pausing, and add HQ toggle
 // @author       YourName
 // @match        https://twitter.com/*
 // @match        https://x.com/*
 // @grant        none
+// @updateURL    https://yourdomain.com/twitter-x-force-hq-video.user.js
+// @downloadURL  https://yourdomain.com/twitter-x-force-hq-video.user.js
+// @supportURL   https://github.com/yourusername/yourrepo/issues
 // ==/UserScript==
 
 (function() {
